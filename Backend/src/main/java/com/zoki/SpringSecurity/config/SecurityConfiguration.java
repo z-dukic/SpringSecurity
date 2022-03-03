@@ -22,6 +22,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         //you have to login
         http.formLogin();
+
+        //basic auth
+        http.httpBasic();
     }
 
     //Create username for you to login
