@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Table(name = "AUTH_USER_DETAILS")
+@Entity
 public class User implements UserDetails {
 
     @Id
@@ -153,5 +154,9 @@ public class User implements UserDetails {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public void setAuthorities(List<Authority> authorities) {
+        this.authorities = authorities;
     }
 }
