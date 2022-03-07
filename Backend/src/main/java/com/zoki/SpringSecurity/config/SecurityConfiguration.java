@@ -22,7 +22,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     //Removes login on start of the application
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        
+
         //Allow all that goes through here
         //http.authorizeRequests().anyRequest().permitAll();
 
