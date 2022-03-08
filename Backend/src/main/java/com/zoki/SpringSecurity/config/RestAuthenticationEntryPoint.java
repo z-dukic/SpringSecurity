@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 //Error when someone whats to enter without permission
 @Component
 public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
-    
+
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response,
                          AuthenticationException authException) throws IOException, ServletException {
